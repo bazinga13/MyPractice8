@@ -15,7 +15,7 @@
         android:text="@string/name"/>
 
     <EditText
-        android:background="@drawable/second_custom_edit"
+        android:background="@drawable/custom_edit_text"
         android:layout_alignStart="@+id/edit_address"
         android:layout_alignParentTop="true"
         android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
         android:text="@string/address"/>
 
     <EditText
-        android:background="@drawable/second_custom_edit"
+        android:background="@drawable/custom_edit_text"
         android:layout_toEndOf="@+id/text_address"
         android:layout_below="@+id/edit_name"
         android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
         android:id="@+id/text_location"/>
 
     <EditText
-        android:background="@drawable/second_custom_edit"
+        android:background="@drawable/custom_edit_text"
         android:layout_alignBaseline="@+id/text_location"
         android:layout_alignBottom="@+id/text_location"
         android:layout_toEndOf="@+id/text_location"
@@ -94,7 +94,7 @@
         android:layout_marginTop="29dp"/>
 
     <EditText
-        android:background="@drawable/second_custom_edit"
+        android:background="@drawable/custom_edit_text"
         android:layout_alignBaseline="@+id/text_province"
         android:layout_alignBottom="@+id/text_province"
         android:layout_alignStart="@+id/edit_address"
@@ -123,5 +123,4 @@
         android:layout_width="wrap_content"
         android:id="@+id/edit_country"
         android:ems="11"/>
-
 </RelativeLayout>
