@@ -17,7 +17,9 @@ public class MainActivity extends AppCompatActivity {
             this.getSupportActionBar().hide();
 
         }
-        else {
+
+        else
+        {
 
             this.getSupportActionBar().show();
 
