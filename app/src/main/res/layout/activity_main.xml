@@ -1,18 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="korelkoproject.ianni.mypractice8.MainActivity">
+    android:background="@color/black">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_alignBaseline="@+id/editName"
+        android:layout_alignBottom="@+id/editName"
+        android:layout_alignParentStart="true"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/name"
+        android:id="@+id/textName"/>
+
+    <EditText
+        android:background="@drawable/custom_edit_text"
+        android:layout_alignStart="@+id/editSurname"
+        android:layout_toEndOf="@+id/textName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/editName"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_alignParentStart="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editName"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/surname"
+        android:id="@+id/textSurname"/>
+
+    <EditText
+        android:background="@drawable/custom_edit_text"
+        android:layout_alignBaseline="@+id/textSurname"
+        android:layout_alignBottom="@+id/textSurname"
+        android:layout_alignStart="@+id/editAddress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/editSurname"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_below="@+id/editSurname"
+        android:layout_alignParentStart="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/address"
+        android:id="@+id/textAddress"/>
+
+    <EditText
+        android:background="@drawable/custom_edit_text"
+        android:layout_alignBaseline="@+id/textAddress"
+        android:layout_alignBottom="@+id/textAddress"
+        android:layout_toEndOf="@+id/textAddress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/editAddress"
+        android:text="Name"/>
+
+    <TextView
+        android:layout_toStartOf="@+id/editLocation"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_below="@+id/editAddress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/location"
+        android:id="@+id/textLocation"/>
+
+    <EditText
+        android:layout_alignBaseline="@+id/textLocation"
+        android:background="@drawable/custom_edit_text"
+        android:layout_alignBottom="@+id/textLocation"
+        android:layout_alignStart="@+id/editAddress"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/editLocation"/>
+
+    <TextView
+        android:layout_alignBaseline="@+id/editProvince"
+        android:layout_alignBottom="@+id/editProvince"
+        android:layout_alignParentStart="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/province"
+        android:id="@+id/textProvince"/>
+
+    <EditText
+        android:background="@drawable/custom_edit_text"
+        android:layout_toEndOf="@+id/textLocation"
+        android:layout_marginTop="@dimen/margins"
+        android:layout_below="@+id/textLocation"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/editProvince"/>
+
+    <TextView
+        android:layout_alignStart="@+id/textProvince"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_below="@+id/editProvince"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/country"
+        android:id="@+id/textCountry"/>
+
+    <EditText
+        android:background="@drawable/custom_edit_text"
+        android:layout_alignBaseline="@+id/textCountry"
+        android:layout_alignBottom="@+id/textCountry"
+        android:layout_alignStart="@+id/editProvince"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/editCountry"/>
 
 </RelativeLayout>

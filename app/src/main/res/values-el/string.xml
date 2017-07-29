@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="location">Τοποθεσια:</string>
+    <string name="address">Διευθυνση:</string>
+    <string name="province">Επαρχια:</string>
+    <string name="surname">Επώνυμο:</string>
+    <string name="app_name">Πρακτικη 8</string>
+    <string name="country">Χωρα:</string>
+    <string name="name">Ονομα:</string>
+
+</resources>

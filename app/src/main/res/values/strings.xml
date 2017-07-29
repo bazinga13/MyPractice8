@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">MyPractice8</string>
+    <string name="app_name">MyPractice 8</string>
+    <string name="location">Location:</string>
+    <string name="province">Province:</string>
+    <string name="surname">Surname:</string>
+    <string name="address">Address:</string>
+    <string name="country">Country:</string>
+    <string name="name">Name:</string>
 </resources>
